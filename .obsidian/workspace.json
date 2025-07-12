@@ -155,12 +155,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "5 - Templates/Full Note.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of Full Note"
             }
           },
           {
