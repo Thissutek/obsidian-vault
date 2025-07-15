@@ -11,10 +11,14 @@
             "id": "11f2b07fad4b0a14",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "6 - Main Notes/OpenZeppelin.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "OpenZeppelin"
             }
           }
         ]
@@ -160,7 +164,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -173,21 +177,26 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8edcef3f9d8fc48d",
+  "active": "11f2b07fad4b0a14",
   "lastOpenFiles": [
+    "3 - Tags/fireship.md",
+    "6 - Main Notes/Dao.md",
+    "6 - Main Notes/Dao Edgecase.md",
+    "6 - Main Notes/Proxy Patterns.md",
+    "4 - Indexes/Web3.md",
+    "6 - Main Notes/Blockchain.md",
+    "1 - Rough Notes/Smart Contract ISA.md",
+    "6 - Main Notes/ERC.md",
+    "3 - Tags/Docker.md",
     "README.md",
     "6 - Main Notes/OpenZeppelin.md",
-    "4 - Indexes/Web3.md",
     "6 - Main Notes/Hardhat.md",
     "5 - Templates/Programming Concept.md",
     "6 - Main Notes/Foundry.md",
     "6 - Main Notes/Reentrancy Attacks.md",
     "1 - Rough Notes/Solidity.md",
-    "1 - Rough Notes/Smart Contract ISA.md",
     "3 - Tags/Programming Language.md",
-    "6 - Main Notes/ERC.md",
     "6 - Main Notes/Solidity in 100 Seconds.md",
-    "3 - Tags/fireship.md",
     "6 - Main Notes/Kubernetes Concepts.md",
     "6 - Main Notes/Common Pitfalls for stacks.md",
     "6 - Main Notes/Data Structure Stacks.md",
@@ -196,11 +205,6 @@
     "1 - Rough Notes/Amazon Web Services.md",
     "3 - Tags/AWS.md",
     "1 - Rough Notes/Valid Parentheses.md",
-    "3 - Tags/stack.md",
-    "3 - Tags/leetcode.md",
-    "3 - Tags/Kubernetes.md",
-    "3 - Tags/Go.md",
-    "3 - Tags/data structure.md",
     "6 - Main Notes",
     "5 - Templates",
     "4 - Indexes",

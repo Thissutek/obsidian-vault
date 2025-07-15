@@ -8,9 +8,5 @@ Tag: [[Web3]]
 ## What is it?
 OpenZeppelin is like a comprehensive library or framework that provides prebuilt, security audited building blocks for smart contracts. For example its kind of like React or Django
 
-## Why does it matter?
-
-
-
 ## Link
 [OpenZeppelin](https://docs.openzeppelin.com/)
