@@ -5,8 +5,6 @@ Tag:
 
 # {{Title}}
 
-
-
 ## What is it?
 
 
