@@ -173,8 +173,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "11f2b07fad4b0a14",
+  "active": "8edcef3f9d8fc48d",
   "lastOpenFiles": [
+    "README.md",
     "6 - Main Notes/OpenZeppelin.md",
     "4 - Indexes/Web3.md",
     "6 - Main Notes/Hardhat.md",
@@ -191,7 +192,6 @@
     "6 - Main Notes/Common Pitfalls for stacks.md",
     "6 - Main Notes/Data Structure Stacks.md",
     "5 - Templates/Full Note.md",
-    "README.md",
     "5 - Templates/Leetcode Problems.md",
     "1 - Rough Notes/Amazon Web Services.md",
     "3 - Tags/AWS.md",
