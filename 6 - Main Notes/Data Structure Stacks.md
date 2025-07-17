@@ -2,7 +2,7 @@
 
 Status: #baby
 
-Tags: [[data structure]]
+Tags: [[data structure]] [[stack]]
 
 ## Stacks
 A Data Structure that kind of reminds me of a queue, its different because its based on the order of operations.

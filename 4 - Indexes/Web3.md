@@ -11,5 +11,5 @@
 [[Foundry]]
 [[OpenZeppelin]]
 
-### Concepts
+### Programming Concepts
 [[Proxy Patterns]]

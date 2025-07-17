@@ -13,5 +13,8 @@ Key Features
 - Testing Framework: Built-in testing with Mocha/Chai
 - Deployment scripts: Automate contract deployment
 
+### Benefits and cons
+Its a slower framework then foundry but its been out longer with more information and tutorials of people using it. Learn 
+
 ## Links
 [Hardhat](https://hardhat.org/)

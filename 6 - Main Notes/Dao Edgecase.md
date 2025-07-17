@@ -16,4 +16,9 @@ OR
 
 --> Need Human Developer to write new contract --> Breaks Trustlessness
 
+
+### Summary
+Human intervention is needed for the upgrade because someone has to write the code, deploy it, and audit it 
+
+But DAO controls whether to use the code, when to activate it, features to enable, and how to configure it. 
 ## References 

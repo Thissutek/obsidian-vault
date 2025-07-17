@@ -25,3 +25,6 @@ Solidity contracts are immutable once deployed, making security critical. Common
 [[Access Control Issues]]
 
 Best practices include using established libraries like OpenZeppelin, extensive testing and professional audits. 
+
+### Links
+[Solidity Docs](https://docs.soliditylang.org/en/v0.8.30/)

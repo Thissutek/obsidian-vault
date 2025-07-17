@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "6 - Main Notes/OpenZeppelin.md",
+                "file": "6 - Main Notes/Minimum Stack.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "OpenZeppelin"
+              "title": "Minimum Stack"
+            }
+          },
+          {
+            "id": "49ddc3542f9bed35",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "6 - Main Notes/Evaluate Reverse Polish Notation.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Evaluate Reverse Polish Notation"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -164,12 +179,12 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 429
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
+      "switcher:Open quick switcher": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
@@ -177,34 +192,35 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "11f2b07fad4b0a14",
+  "active": "49ddc3542f9bed35",
   "lastOpenFiles": [
-    "3 - Tags/fireship.md",
-    "6 - Main Notes/Dao.md",
-    "6 - Main Notes/Dao Edgecase.md",
-    "6 - Main Notes/Proxy Patterns.md",
-    "4 - Indexes/Web3.md",
-    "6 - Main Notes/Blockchain.md",
-    "1 - Rough Notes/Smart Contract ISA.md",
-    "6 - Main Notes/ERC.md",
-    "3 - Tags/Docker.md",
-    "README.md",
-    "6 - Main Notes/OpenZeppelin.md",
-    "6 - Main Notes/Hardhat.md",
-    "5 - Templates/Programming Concept.md",
-    "6 - Main Notes/Foundry.md",
-    "6 - Main Notes/Reentrancy Attacks.md",
-    "1 - Rough Notes/Solidity.md",
-    "3 - Tags/Programming Language.md",
-    "6 - Main Notes/Solidity in 100 Seconds.md",
-    "6 - Main Notes/Kubernetes Concepts.md",
-    "6 - Main Notes/Common Pitfalls for stacks.md",
+    "3 - Tags/stack.md",
     "6 - Main Notes/Data Structure Stacks.md",
-    "5 - Templates/Full Note.md",
+    "6 - Main Notes/Evaluate Reverse Polish Notation.md",
+    "6 - Main Notes/ERC.md",
+    "4 - Indexes/Web3.md",
+    "6 - Main Notes/Proxy Patterns.md",
+    "1 - Rough Notes/Solidity.md",
+    "6 - Main Notes/Blockchain.md",
+    "6 - Main Notes/Minimum Stack.md",
     "5 - Templates/Leetcode Problems.md",
-    "1 - Rough Notes/Amazon Web Services.md",
-    "3 - Tags/AWS.md",
-    "1 - Rough Notes/Valid Parentheses.md",
+    "3 - Tags/leetcode.md",
+    "Project Ideas/MVP Brave ISA Platform.md",
+    "5 - Templates/Programming Concept.md",
+    "6 - Main Notes/MVP.md",
+    "Project Ideas",
+    "6 - Main Notes/Hardhat.md",
+    "6 - Main Notes/Foundry.md",
+    "1 - Rough Notes/Smart Contract ISA.md",
+    "1 - Rough Notes/What is Golang.md",
+    "4 - Indexes/Programming Language.md",
+    "6 - Main Notes/R.md",
+    "6 - Main Notes/SQL.md",
+    "6 - Main Notes/C.md",
+    "6 - Main Notes/Kotlin.md",
+    "6 - Main Notes/Swift.md",
+    "6 - Main Notes/Python.md",
+    "6 - Main Notes/Java.md",
     "6 - Main Notes",
     "5 - Templates",
     "4 - Indexes",
@@ -213,7 +229,6 @@
     "2 - Source Material/Papers",
     "2 - Source Material/Other",
     "2 - Source Material/Books",
-    "2 - Source Material/Articles",
-    "3 - Tags"
+    "2 - Source Material/Articles"
   ]
 }

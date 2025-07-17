@@ -1,0 +1,13 @@
+[[Javascript]]
+[[Typescript]]
+[[Rust]]
+[[Python]]
+[[Java]]
+[[Swift]]
+[[Kotlin]]
+[[C#]]
+[[SQL]]
+[[R]]
+[[Go]]
+[[Solidity]]
+
