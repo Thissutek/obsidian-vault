@@ -1,1 +1,2 @@
 [[stack]]
+[[Binary Search]]

@@ -13,26 +13,22 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "6 - Main Notes/Minimum Stack.md",
+                "file": "6 - Main Notes/Binary Search.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Minimum Stack"
+              "title": "Binary Search"
             }
           },
           {
             "id": "49ddc3542f9bed35",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "6 - Main Notes/Evaluate Reverse Polish Notation.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Evaluate Reverse Polish Notation"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ],
@@ -179,7 +175,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 429
+    "width": 276
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -194,17 +190,26 @@
   },
   "active": "49ddc3542f9bed35",
   "lastOpenFiles": [
+    "6 - Main Notes/Binary Search.md",
+    "3 - Tags/leetcode.md",
+    "6 - Main Notes/Problem-Binary Search.md",
+    "1 - Rough Notes/Valid Parentheses.md",
     "3 - Tags/stack.md",
+    "6 - Main Notes/Data Structure Binary Stack.md",
+    "6 - Main Notes/Car Fleet.md",
+    "6 - Main Notes/Daily Temperatures.md",
     "6 - Main Notes/Data Structure Stacks.md",
+    "6 - Main Notes/Sliding Window.md",
+    "6 - Main Notes/Monotonic Stack Problem.md",
+    "6 - Main Notes/Generate Parentheses.md",
     "6 - Main Notes/Evaluate Reverse Polish Notation.md",
+    "5 - Templates/Leetcode Problems.md",
+    "6 - Main Notes/Minimum Stack.md",
     "6 - Main Notes/ERC.md",
     "4 - Indexes/Web3.md",
     "6 - Main Notes/Proxy Patterns.md",
     "1 - Rough Notes/Solidity.md",
     "6 - Main Notes/Blockchain.md",
-    "6 - Main Notes/Minimum Stack.md",
-    "5 - Templates/Leetcode Problems.md",
-    "3 - Tags/leetcode.md",
     "Project Ideas/MVP Brave ISA Platform.md",
     "5 - Templates/Programming Concept.md",
     "6 - Main Notes/MVP.md",
@@ -212,15 +217,6 @@
     "6 - Main Notes/Hardhat.md",
     "6 - Main Notes/Foundry.md",
     "1 - Rough Notes/Smart Contract ISA.md",
-    "1 - Rough Notes/What is Golang.md",
-    "4 - Indexes/Programming Language.md",
-    "6 - Main Notes/R.md",
-    "6 - Main Notes/SQL.md",
-    "6 - Main Notes/C.md",
-    "6 - Main Notes/Kotlin.md",
-    "6 - Main Notes/Swift.md",
-    "6 - Main Notes/Python.md",
-    "6 - Main Notes/Java.md",
     "6 - Main Notes",
     "5 - Templates",
     "4 - Indexes",

@@ -28,5 +28,6 @@ isEmpty() checks if its empty
 backtracking, undo, Browser History 
 
 
-
+## Concepts
+[[Monotonic Stack Problem]]
 ## References 

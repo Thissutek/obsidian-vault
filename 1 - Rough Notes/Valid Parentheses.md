@@ -3,7 +3,7 @@
 Status:
 
 Tags: [[leetcode]] [[stack]]
-
+Difficulty: #easy
 ## Valid Parentheses
 Problem is you are given a string of brackets they are only true if they have a closing bracket but in the order of the stack if they are out of the order of the stack even though its a closing bracket it will result in false
 
