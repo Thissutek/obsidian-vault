@@ -8,17 +8,16 @@
         "type": "tabs",
         "children": [
           {
-            "id": "11f2b07fad4b0a14",
+            "id": "9962766f3b47116c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "bases",
               "state": {
-                "file": "6 - Main Notes/Binary Search.md",
-                "mode": "source",
-                "source": false
+                "file": "6 - Main Notes/Untitled 3.base",
+                "viewName": "Table"
               },
-              "icon": "lucide-file",
-              "title": "Binary Search"
+              "icon": "lucide-table",
+              "title": "Untitled 3"
             }
           },
           {
@@ -31,8 +30,7 @@
               "title": "Graph view"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -151,13 +149,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "5 - Templates/Full Note.md",
+                "file": "6 - Main Notes/Untitled 3.base",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Full Note"
+              "title": "Outline of Untitled 3"
             }
           },
           {
@@ -171,14 +169,15 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 276
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "graph:Open graph view": false,
       "switcher:Open quick switcher": false,
       "canvas:Create new canvas": false,
@@ -188,43 +187,43 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "49ddc3542f9bed35",
+  "active": "f163eda38d969c5d",
   "lastOpenFiles": [
-    "6 - Main Notes/Binary Search.md",
+    "6 - Main Notes/Untitled 3.base",
+    "6 - Main Notes/Neo4j.md",
+    "6 - Main Notes/What is Docker.md",
+    "3 - Tags/database.md",
+    "6 - Main Notes/Untitled 2.base",
+    "6 - Main Notes/2025-12-03.md",
+    "Claude Desktop Instructions.md",
+    "6 - Main Notes/Untitled 1.base",
+    "Claude Research Instructions.md",
+    "6 - Main Notes/Untitled.base",
+    "6 - Main Notes/Reverse Linked List.md",
+    "6 - Main Notes/Linked List.md",
     "3 - Tags/leetcode.md",
-    "6 - Main Notes/Problem-Binary Search.md",
-    "1 - Rough Notes/Valid Parentheses.md",
-    "3 - Tags/stack.md",
-    "6 - Main Notes/Data Structure Binary Stack.md",
-    "6 - Main Notes/Car Fleet.md",
-    "6 - Main Notes/Daily Temperatures.md",
+    "6 - Main Notes/Linked List Technique.md",
+    "6 - Main Notes/Arrays & Hashing Problems.md",
+    "6 - Main Notes/Contains Duplicate.md",
+    "6 - Main Notes/Arrays & Hashing.md",
+    "6 - Main Notes/Valid Palindrome.md",
+    "6 - Main Notes/LangChain.md",
+    "6 - Main Notes/Two Pointer.md",
     "6 - Main Notes/Data Structure Stacks.md",
+    "3 - Tags/stack.md",
+    "6 - Main Notes/Two Pointer Method.md",
+    "6 - Main Notes/Problem-Binary Search.md",
+    "6 - Main Notes/Binary Search.md",
+    "6 - Main Notes/Sliding Window Method.md",
     "6 - Main Notes/Sliding Window.md",
-    "6 - Main Notes/Monotonic Stack Problem.md",
-    "6 - Main Notes/Generate Parentheses.md",
-    "6 - Main Notes/Evaluate Reverse Polish Notation.md",
-    "5 - Templates/Leetcode Problems.md",
-    "6 - Main Notes/Minimum Stack.md",
-    "6 - Main Notes/ERC.md",
-    "4 - Indexes/Web3.md",
-    "6 - Main Notes/Proxy Patterns.md",
-    "1 - Rough Notes/Solidity.md",
-    "6 - Main Notes/Blockchain.md",
-    "Project Ideas/MVP Brave ISA Platform.md",
-    "5 - Templates/Programming Concept.md",
-    "6 - Main Notes/MVP.md",
+    "6 - Main Notes/Best time to buy and sell a stock.md",
+    "3 - Tags/data structure.md",
     "Project Ideas",
-    "6 - Main Notes/Hardhat.md",
-    "6 - Main Notes/Foundry.md",
-    "1 - Rough Notes/Smart Contract ISA.md",
     "6 - Main Notes",
     "5 - Templates",
     "4 - Indexes",
     "2 - Source Material/Videos",
     "2 - Source Material/Podcasts",
-    "2 - Source Material/Papers",
-    "2 - Source Material/Other",
-    "2 - Source Material/Books",
-    "2 - Source Material/Articles"
+    "2 - Source Material/Papers"
   ]
 }

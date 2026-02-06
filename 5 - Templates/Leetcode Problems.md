@@ -2,7 +2,7 @@
 
 Status:
 Tag:
-Difficulty
+Difficulty:
 # {{Title}}
 ## Problem
 

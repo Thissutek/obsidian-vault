@@ -1,2 +1,6 @@
+[[Arrays & Hashing]]
+[[Two Pointer]]
+[[Sliding Window]]
 [[stack]]
 [[Binary Search]]
+[[Linked List]]
