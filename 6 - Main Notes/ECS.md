@@ -2,7 +2,7 @@
 
 Status:
 
-Tags:[[AWS]]
+Tag: [[Software Engineering]] [[Cloud Services]] [[AWS]] [[DevOps]]
 
 ## ECS
 Elastic Container Service

@@ -2,7 +2,7 @@
 
 Status:
 
-Tags:
+Tag: [[Software Engineering]] [[AI & Machine Learning]]
 
 ## LLM
 Large Language Model

@@ -2,7 +2,7 @@
 
 Status:
 
-Tags: [[Web3]]
+Tag: [[Software Engineering]] [[Web3 & Blockchain]] [[Web3]]
 
 ## Dao
 Community owned platform

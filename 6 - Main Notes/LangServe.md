@@ -2,7 +2,7 @@
 
 Status:
 
-Tags: [[LangChain]]
+Tag: [[Software Engineering]] [[AI & Machine Learning]] [[LangChain]]
 
 ## LangServe
 A tool to deploy LangChain workflows as API's. 

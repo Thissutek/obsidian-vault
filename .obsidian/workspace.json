@@ -13,11 +13,25 @@
             "state": {
               "type": "bases",
               "state": {
-                "file": "6 - Main Notes/Untitled 3.base",
+                "file": "6 - Main Notes/Untitled 4.base",
                 "viewName": "Table"
               },
               "icon": "lucide-table",
-              "title": "Untitled 3"
+              "title": "Untitled 4"
+            }
+          },
+          {
+            "id": "e63b06b759e4d720",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "6 - Main Notes/Daily Concept.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Daily Concept"
             }
           },
           {
@@ -30,7 +44,8 @@
               "title": "Graph view"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -149,13 +164,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "6 - Main Notes/Untitled 3.base",
+                "file": "6 - Main Notes/Daily Concept.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Untitled 3"
+              "title": "Outline of Daily Concept"
             }
           },
           {
@@ -187,43 +202,43 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f163eda38d969c5d",
+  "active": "e63b06b759e4d720",
   "lastOpenFiles": [
-    "6 - Main Notes/Untitled 3.base",
-    "6 - Main Notes/Neo4j.md",
-    "6 - Main Notes/What is Docker.md",
-    "3 - Tags/database.md",
-    "6 - Main Notes/Untitled 2.base",
+    "6 - Main Notes/Software Engineering.md",
+    "6 - Main Notes/Programming Fundamentals.md",
+    "6 - Main Notes/AI & Machine Learning.md",
     "6 - Main Notes/2025-12-03.md",
-    "Claude Desktop Instructions.md",
+    "6 - Main Notes/Foundry.md",
+    "6 - Main Notes/Java.md",
+    "6 - Main Notes/Koko Eating Bananas.md",
+    "6 - Main Notes/Javascript.md",
+    "6 - Main Notes/Untitled 2.base",
     "6 - Main Notes/Untitled 1.base",
-    "Claude Research Instructions.md",
     "6 - Main Notes/Untitled.base",
-    "6 - Main Notes/Reverse Linked List.md",
-    "6 - Main Notes/Linked List.md",
-    "3 - Tags/leetcode.md",
-    "6 - Main Notes/Linked List Technique.md",
-    "6 - Main Notes/Arrays & Hashing Problems.md",
-    "6 - Main Notes/Contains Duplicate.md",
-    "6 - Main Notes/Arrays & Hashing.md",
-    "6 - Main Notes/Valid Palindrome.md",
-    "6 - Main Notes/LangChain.md",
-    "6 - Main Notes/Two Pointer.md",
-    "6 - Main Notes/Data Structure Stacks.md",
-    "3 - Tags/stack.md",
-    "6 - Main Notes/Two Pointer Method.md",
-    "6 - Main Notes/Problem-Binary Search.md",
-    "6 - Main Notes/Binary Search.md",
-    "6 - Main Notes/Sliding Window Method.md",
-    "6 - Main Notes/Sliding Window.md",
-    "6 - Main Notes/Best time to buy and sell a stock.md",
-    "3 - Tags/data structure.md",
+    "6 - Main Notes/Dynamic Programming.md",
+    "6 - Main Notes/Databases.md",
+    "6 - Main Notes/Web3 & Blockchain.md",
+    "6 - Main Notes/Cloud Services.md",
+    "zettelkasten-vault-update-guide.md",
+    "6 - Main Notes/Feature Flags TEST.md",
+    "6 - Main Notes/Algorithms.md",
+    "6 - Main Notes/Template Method Pattern.md",
+    "6 - Main Notes/Testing & Practices.md",
+    "6 - Main Notes/Concurrency.md",
+    "6 - Main Notes/DevOps.md",
+    "6 - Main Notes/API & Networking.md",
+    "6 - Main Notes/Architecture.md",
+    "6 - Main Notes/System Design.md",
+    "6 - Main Notes/Data Structures.md",
+    "6 - Main Notes/Software Principles.md",
+    "6 - Main Notes/Design Patterns.md",
+    "6 - Main Notes/Daily Concept.md",
+    "6 - Main Notes/Untitled 4.base",
+    "6 - Main Notes/Untitled 3.base",
     "Project Ideas",
     "6 - Main Notes",
     "5 - Templates",
     "4 - Indexes",
-    "2 - Source Material/Videos",
-    "2 - Source Material/Podcasts",
-    "2 - Source Material/Papers"
+    "2 - Source Material/Videos"
   ]
 }

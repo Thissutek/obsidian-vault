@@ -2,7 +2,7 @@
 
 Status: #baby
 
-Tags: [[data structure]] [[stack]] [[leetcode]]
+Tag: [[Software Engineering]] [[Data Structures]] [[data structure]] [[stack]] [[leetcode]]
 
 ## Stacks
 A Data Structure that kind of reminds me of a queue, its different because its based on the order of operations.

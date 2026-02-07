@@ -1,7 +1,7 @@
 2025-07-15 11:07
 
 Status:
-Tag: [[Web3]]
+Tag: [[Software Engineering]] [[Web3 & Blockchain]] [[Web3]]
 
 # Hardhat
 ## What is it?

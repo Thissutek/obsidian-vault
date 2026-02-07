@@ -2,7 +2,7 @@
 
 Status:
 
-Tags:[[Kubernetes]] [[What is Kubernetes]]
+Tag: [[Software Engineering]] [[DevOps]] [[Kubernetes]] [[What is Kubernetes]]
 
 ## Kubernetes Concepts
 Pod  - The smallest unit in K8s - wraps one or more containers that run together

@@ -1,7 +1,7 @@
 2025-12-03 12:00
 
 Status:
-Tag: [[database]] [[data structure]]
+Tag: [[Software Engineering]] [[Databases]] [[Data Structures]] [[database]] [[data structure]]
 
 # Neo4j
 

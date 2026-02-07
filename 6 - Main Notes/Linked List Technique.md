@@ -1,7 +1,7 @@
 2025-08-20 16:16
 
 Status:
-Tag: [[Linked List]] [[leetcode]]
+Tag: [[Software Engineering]] [[Data Structures]] [[Linked List]] [[leetcode]]
 
 # Linked List Technique
 

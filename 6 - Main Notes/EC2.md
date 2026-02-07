@@ -2,7 +2,7 @@
 
 Status:
 
-Tags: [[AWS]]
+Tag: [[Software Engineering]] [[Cloud Services]] [[AWS]]
 
 ## EC2
 ##### Elastic Compute Cloud

@@ -1,3 +1,5 @@
+Tag: [[Software Engineering]] [[Algorithms]]
+
 [[Sliding Window Method]]
 
 ## Problems

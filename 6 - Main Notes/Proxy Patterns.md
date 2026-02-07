@@ -2,7 +2,7 @@
 
 Status:
 
-Tags: [[Dao]] [[Web3]]
+Tag: [[Software Engineering]] [[Web3 & Blockchain]] [[Design Patterns]] [[Dao]] [[Web3]]
 
 ## Proxy Patterns
 A way for smart contracts to be upgraded without having to start a new contract. Basically creating the upgrades at different locations and having it point towards those proxies.

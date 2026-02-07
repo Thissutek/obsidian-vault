@@ -1,7 +1,7 @@
 2025-07-18 14:56
 
 Status:
-Tag: [[Data Structure Stacks]] [[stack]] [[Daily Temperatures]]
+Tag: [[Software Engineering]] [[Data Structures]] [[Algorithms]] [[Data Structure Stacks]] [[stack]] [[Daily Temperatures]]
 
 # Monotonic Stack Problem
 

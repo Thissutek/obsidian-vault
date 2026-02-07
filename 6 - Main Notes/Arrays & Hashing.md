@@ -1,7 +1,7 @@
 2025-08-20 15:56
 
 Status:
-Tag: [[leetcode]] [[Arrays & Hashing Problems]]
+Tag: [[Software Engineering]] [[Data Structures]] [[Algorithms]] [[leetcode]] [[Arrays & Hashing Problems]]
 
 # Arrays & Hashing
 

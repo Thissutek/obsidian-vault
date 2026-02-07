@@ -2,7 +2,7 @@
 
 Status:
 
-Tags: [[Docker]] [[Kubernetes]]
+Tag: [[Software Engineering]] [[DevOps]] [[Docker]] [[Kubernetes]]
 
 ## What is Kubernetes
 aka K8s is a container orchestration system. It means it automates how you deploy, scale, manage or maintain containers usually Docker

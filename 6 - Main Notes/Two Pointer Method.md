@@ -1,7 +1,7 @@
 2025-08-19 23:08
 
 Status:
-Tag: [[Two Pointer]] [[leetcode]]
+Tag: [[Software Engineering]] [[Algorithms]] [[Two Pointer]] [[leetcode]]
 
 # Two Pointer Method
 

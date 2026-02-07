@@ -1,7 +1,7 @@
 2025-07-15 10:17
 
 Status:
-Tag:[[Smart Contract ISA]] [[Web3]] [[Solidity]]
+Tag: [[Software Engineering]] [[Web3 & Blockchain]] [[Smart Contract ISA]] [[Web3]] [[Solidity]]
 
 # ERC
 

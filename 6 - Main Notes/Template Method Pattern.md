@@ -1,7 +1,7 @@
 2026-02-07 12:02
 
 Status:
-Tag: [[Software Engineering]] [[Daily Concept]]
+Tag: [[Software Engineering]] [[Daily Concept]] [[Design Patterns]]
 
 # Template Method Pattern
 

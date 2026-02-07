@@ -2,7 +2,7 @@
 
 Status:
 
-Tags: [[LangGraph]] [[LangChain]]
+Tag: [[Software Engineering]] [[AI & Machine Learning]] [[LangGraph]] [[LangChain]]
 
 ## LangGraph Studio
 This is basically an IDE. Before it was a Desktop application until it was deprecated and now it runs as a local server that you start from the CLI. It's similar to how we start web servers when we need to test web apps. 

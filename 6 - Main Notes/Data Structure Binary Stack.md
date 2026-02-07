@@ -1,7 +1,7 @@
 2025-07-30 16:33
 
 Status:
-Tag:[[Binary Search]]
+Tag: [[Software Engineering]] [[Algorithms]] [[Data Structures]] [[Binary Search]]
 
 # Data Structure Binary Stack
 

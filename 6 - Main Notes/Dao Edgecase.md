@@ -2,7 +2,7 @@
 
 Status:
 
-Tags:[[Dao]] [[Proxy Patterns]]
+Tag: [[Software Engineering]] [[Web3 & Blockchain]] [[Dao]] [[Proxy Patterns]]
 
 ## Dao Edgecase
 With the idea of DAO governance and immutable smart contracts here is a edge case. 

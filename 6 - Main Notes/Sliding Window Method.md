@@ -1,7 +1,7 @@
 2025-08-19 22:45
 
 Status:
-Tag: [[Sliding Window]] [[leetcode]]
+Tag: [[Software Engineering]] [[Algorithms]] [[Sliding Window]] [[leetcode]]
 
 # Sliding Window Method
 

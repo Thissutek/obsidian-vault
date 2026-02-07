@@ -2,7 +2,7 @@
 
 Status: #baby 
 
-Tags:  [[leetcode]] [[data structure]]
+Tag: [[Software Engineering]] [[Data Structures]] [[leetcode]] [[data structure]]
 
 ## Common Pitfalls for stacks
 Things I didn't know but now i know 

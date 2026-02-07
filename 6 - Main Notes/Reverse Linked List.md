@@ -1,8 +1,7 @@
 2025-08-20 16:17
 
 Status:
-Tag:
-Difficulty: [[Linked List]] [[Linked List Technique]] [[leetcode]]
+Tag: [[Software Engineering]] [[Data Structures]] [[Linked List]] [[Linked List Technique]] [[leetcode]]
 # Reverse Linked List
 ## Problem
 Given the beginning of a singly linked list `head`, reverse the list, and return the new beginning of the list.

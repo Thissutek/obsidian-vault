@@ -2,7 +2,7 @@
 
 Status:
 
-Tags: [[Docker]] 
+Tag: [[Software Engineering]] [[DevOps]] [[Docker]]
 
 ## What is Docker
 Docker is a tool that packages your app and everything it needs into a container its kind of like a mini virtual machine

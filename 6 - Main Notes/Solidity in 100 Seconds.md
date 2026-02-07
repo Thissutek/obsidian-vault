@@ -2,7 +2,7 @@
 
 Status:
 
-Tags:[[fireship]] [[Smart Contract ISA]][[Web3]]
+Tag: [[Software Engineering]] [[Web3 & Blockchain]] [[fireship]] [[Smart Contract ISA]] [[Web3]]
 
 ## Solidity in 100 Seconds
 Compiled Programming language to create smart contracts

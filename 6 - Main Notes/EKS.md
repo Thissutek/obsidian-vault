@@ -2,7 +2,7 @@
 
 Status:
 
-Tags: [[AWS]] [[Kubernetes]]
+Tag: [[Software Engineering]] [[Cloud Services]] [[AWS]] [[DevOps]] [[Kubernetes]]
 
 ## EKS
 Elastic Kubernetes Service

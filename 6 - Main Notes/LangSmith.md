@@ -2,7 +2,7 @@
 
 Status:
 
-Tags: [[LangChain]]
+Tag: [[Software Engineering]] [[AI & Machine Learning]] [[LangChain]]
 
 ## LangSmith
 It is a developer platform for debugging, monitoring and evaluating LLM apps. It gives an observability dashboard where we can see all the prompts, responses, and traces. Lets you run evaluations (automatic or human) on prompt quality correctness, latency

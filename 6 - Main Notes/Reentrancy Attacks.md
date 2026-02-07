@@ -1,7 +1,7 @@
 2025-07-15 10:44
 
 Status:
-Tag: [[Solidity]] [[Web3]]
+Tag: [[Software Engineering]] [[Web3 & Blockchain]] [[Solidity]] [[Web3]]
 ## What is it?
 A Reentrancy Attack occurs when a malicious contract calls back into your contract before the first function has finished executing. This can allow attackers to drain funds or manipulate state in unexpected ways.
 

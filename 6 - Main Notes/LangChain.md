@@ -2,7 +2,7 @@
 
 Status:
 
-Tags: [[LangChain]] [[LLM]]
+Tag: [[Software Engineering]] [[AI & Machine Learning]] [[LangChain]] [[LLM]]
 
 ## LangChain
 Core framework for building out LLM applications. Provides abstractions for prompts, chains, agents, memory and integrations with 100+ LLM providers and data sources. This is kind of like the foundation for connecting external tools to your LLM. 
