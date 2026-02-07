@@ -8,4 +8,9 @@ Tag: [[Software Engineering]]
 ---
 *Check the **Backlinks** panel (right sidebar) to see all daily lessons.*
 
+- [[Dynamic Programming]]
+- [[Feature Flags]]
+- [[Template Method Pattern]]
+- [[Immutability Benefits]]
+- [[Property-Based Testing]]
 - [[Hexagonal Architecture]]
