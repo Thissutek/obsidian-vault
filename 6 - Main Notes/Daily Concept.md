@@ -7,3 +7,5 @@ Tag: [[Software Engineering]]
 
 ---
 *Check the **Backlinks** panel (right sidebar) to see all daily lessons.*
+
+- [[Hexagonal Architecture]]
