@@ -22,6 +22,7 @@ Tag: [[Software Engineering]]
 - [[TCP vs UDP]] — Reliable vs fast transport
 - [[Connection Pooling]] — Reuse expensive connections
 
+- [[HTTP-2 vs HTTP-1.1]]
 ## Related
 - [[System Design]] — APIs within larger system architectures
 - [[Security]] — Authentication and encryption topics
