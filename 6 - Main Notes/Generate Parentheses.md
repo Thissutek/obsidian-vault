@@ -1,7 +1,7 @@
 2025-07-17 16:49
 
 Status:
-Tag:[[stack]] [[Data Structure Stacks]] [[leetcode]]
+Tag: [[Software Engineering]] [[Algorithms]] [[stack]] [[Data Structure Stacks]] [[leetcode]]
 Difficulty: #medium
 
 # Generate Parentheses

@@ -1,7 +1,7 @@
 2025-08-07 16:58
 
 Status:
-Tag: [[Binary Search]] [[leetcode]]
+Tag: [[Software Engineering]] [[Algorithms]] [[Binary Search]] [[leetcode]]
 Difficulty: #medium
 # Koko Eating Bananas
 ## Problem

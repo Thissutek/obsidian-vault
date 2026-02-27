@@ -2,7 +2,7 @@
 
 Status: #baby 
 
-Tags: [[AWS]] 
+Tag: [[Software Engineering]] [[Cloud Services]] [[AWS]]
 
 ## Amazon Web Services
 AWS is the world's biggest, most powerful platform. It gives computing, storage, databases, networking, machine learning, security and developer tools

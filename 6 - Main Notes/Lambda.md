@@ -2,7 +2,7 @@
 
 Status:
 
-Tag: [[Software Engineering]] [[Cloud Services]] [[AWS]] [[Architecture]]
+Tag: [[Software Engineering]] [[Cloud Services]] [[DevOps]] [[AWS]] [[Architecture]]
 
 ## Lambda
 Run code without managing servers. Think of it as a "functions as a service"

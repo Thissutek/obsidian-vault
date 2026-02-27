@@ -1,8 +1,8 @@
 2025-08-20 16:03
 
 Status:
-Tag: #easy 
-Difficulty: [[Arrays & Hashing]] [[Arrays & Hashing Problems]] [[leetcode]]
+Tag: [[Software Engineering]] [[Data Structures]] [[leetcode]]
+Difficulty: #easy
 # Contains Duplicate
 ## Problem
 

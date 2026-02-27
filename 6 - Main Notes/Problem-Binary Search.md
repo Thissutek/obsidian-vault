@@ -1,8 +1,8 @@
 2025-07-30 16:50
 
 Status:
-Tag: [[Binary Search]] [[leetcode]]
-Difficulty: #easy 
+Tag: [[Software Engineering]] [[Algorithms]] [[Binary Search]] [[leetcode]]
+Difficulty: #easy
 # Problem-Binary Search
 ## Problem
 You are given an array of **distinct** integers `nums`, sorted in ascending order, and an integer `target`.

@@ -1,7 +1,7 @@
 2025-08-07 15:25
 
 Status:
-Tag: [[Binary Search]] [[leetcode]]
+Tag: [[Software Engineering]] [[Algorithms]] [[Binary Search]] [[leetcode]]
 Difficulty: #medium
 # Search a 2D Matrix
 ## Problem

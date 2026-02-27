@@ -1,7 +1,7 @@
 2026-02-15 09:00
 
 Status:
-Tag: [[Software Engineering]] [[Daily Concept]] [[Algorithms]]
+Tag: [[Software Engineering]] [[Daily Concept]] [[System Design]] [[Algorithms]]
 
 # Map-Reduce Pattern
 

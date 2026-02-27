@@ -1,7 +1,7 @@
 2025-07-18 15:48
 
 Status:
-Tag: [[stack]] [[Data Structure Stacks]] [[leetcode]]
+Tag: [[Software Engineering]] [[Algorithms]] [[stack]] [[Data Structure Stacks]] [[leetcode]]
 Difficulty: #medium 
 # Car Fleet
 ## Problem

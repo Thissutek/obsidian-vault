@@ -1,7 +1,7 @@
 2025-08-19 22:54
 
 Status:
-Tag: [[leetcode]] [[Sliding Window Method]] [[Sliding Window]]
+Tag: [[Software Engineering]] [[Algorithms]] [[leetcode]] [[Sliding Window Method]] [[Sliding Window]]
 Difficulty: #easy 
 # Best time to buy and sell a stock
 ## Problem

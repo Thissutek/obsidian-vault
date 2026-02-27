@@ -1,8 +1,8 @@
 2025-08-19 23:13
 
 Status:
-Tag: #easy 
-Difficulty: [[Two Pointer]] [[leetcode]] [[Two Pointer Method]]
+Tag: [[Software Engineering]] [[Algorithms]] [[leetcode]]
+Difficulty: #easy
 # Valid Palindrome
 ## Problem
 Given a string `s`, return `true` if it is a **palindrome**, otherwise return `false`.

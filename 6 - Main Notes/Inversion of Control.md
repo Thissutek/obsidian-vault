@@ -1,7 +1,7 @@
 2026-02-23 09:00
 
 Status:
-Tag: [[Software Engineering]] [[Daily Concept]] [[Software Principles]]
+Tag: [[Software Engineering]] [[Daily Concept]] [[Programming Fundamentals]] [[Software Principles]]
 
 # Inversion of Control
 

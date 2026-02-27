@@ -1,7 +1,7 @@
 2025-07-17 22:33
 
 Status:
-Tag: [[stack]] [[leetcode]] [[Data Structure Stacks]] [[Monotonic Stack Problem]]
+Tag: [[Software Engineering]] [[Algorithms]] [[stack]] [[leetcode]] [[Data Structure Stacks]] [[Monotonic Stack Problem]]
 Difficulty: Medium 
 # Daily Temperatures
 ## Problem

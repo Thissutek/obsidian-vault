@@ -1,4 +1,4 @@
-Tag: [[Software Engineering]] [[Algorithms]] [[Data Structures]]
+Tag: [[Software Engineering]] [[Daily Concept]] [[Algorithms]] [[Data Structures]]
 
 [[Data Structure Binary Stack]]
 ## Problems

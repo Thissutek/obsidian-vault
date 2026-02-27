@@ -1,7 +1,7 @@
 2025-07-17 15:50
 
 Status:
-Tag: [[stack]] [[leetcode]] [[Data Structure Stacks]]
+Tag: [[Software Engineering]] [[Algorithms]] [[stack]] [[leetcode]] [[Data Structure Stacks]]
 
 # Evaluate Reverse Polish Notation
 ## Problem

@@ -1,7 +1,7 @@
 2026-02-21 09:00
 
 Status:
-Tag: [[Software Engineering]] [[Daily Concept]] [[API & Networking]]
+Tag: [[Software Engineering]] [[Daily Concept]] [[System Design]] [[API & Networking]]
 
 # CDN Architecture
 

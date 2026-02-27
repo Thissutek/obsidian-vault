@@ -1,7 +1,7 @@
 2025-07-16 22:15
 
 Status:
-Tag: [[leetcode]] [[stack]]
+Tag: [[Software Engineering]] [[Data Structures]] [[leetcode]] [[stack]]
 
 # Minimum Stack
 
