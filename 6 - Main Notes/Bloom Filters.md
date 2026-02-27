@@ -1,4 +1,4 @@
-2026-02-17 09:00
+2026-02-26 21:14
 
 Status:
 Tag: [[Software Engineering]] [[Daily Concept]] [[Data Structures]]
@@ -6,20 +6,20 @@ Tag: [[Software Engineering]] [[Daily Concept]] [[Data Structures]]
 # Bloom Filters
 
 ## What is it?
-A Bloom filter is a space-efficient probabilistic data structure that helps determine whether an element is a member of a set. It uses multiple hash functions to map elements to a bit array, allowing for quick membership testing. However, it can return false positives, meaning it might indicate an element is in the set when it isn't, but it never gives false negatives.
+A Bloom Filter is a space-efficient probabilistic data structure used to test whether an element is a member of a set. It allows for fast membership checks with the trade-off that it may sometimes falsely indicate that an element is present (a false positive), but it will never falsely indicate that an element is absent (no false negatives).
 
 ## Why does it matter?
-Bloom filters are important in scenarios where memory efficiency and speed are crucial, such as in databases, network systems, and large-scale applications. They can significantly reduce the amount of storage needed for membership queries, speeding up processes like searching and deduplication while maintaining a manageable level of inaccuracy.
+Bloom Filters are important in software engineering because they help reduce memory usage and improve performance in applications that require fast membership checks, such as caching, databases, and network applications. They are especially useful when dealing with large datasets where traditional data structures would consume too much memory or when we want to minimize disk I/O operations.
 
 ## Example
-Here's a simple example in Python that demonstrates how a Bloom filter might be implemented:
+Here's a simple example in Python to illustrate a Bloom Filter using a list of bits and multiple hash functions:
 
 ```python
 class BloomFilter:
-    def __init__(self, size):
+    def __init__(self, size, hash_functions):
         self.size = size
         self.bit_array = [0] * size
-        self.hash_functions = [hash, lambda x: hash(x) * 31]
+        self.hash_functions = hash_functions
 
     def add(self, item):
         for func in self.hash_functions:
@@ -30,10 +30,11 @@ class BloomFilter:
         return all(self.bit_array[func(item) % self.size] for func in self.hash_functions)
 
 # Example usage
-bloom = BloomFilter(10)
+hash_funcs = [hash, lambda x: hash(x) * 2]  # Simple hash functions
+bloom = BloomFilter(10, hash_funcs)
 bloom.add("apple")
 print(bloom.contains("apple"))  # True
-print(bloom.contains("banana")) # False (might be false positive)
+print(bloom.contains("banana"))  # May return False (or True due to false positive)
 ```
 
-In this example, we create a simple Bloom filter that uses two hash functions to manage membership testing.
+In this example, we create a Bloom Filter with a bit array and two simple hash functions to add and check for items efficiently.
