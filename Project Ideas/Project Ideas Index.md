@@ -17,3 +17,4 @@ Tag: [[Project Ideas]] [[Index]]
 ## All Ideas (chronological)
 - [[Home-Hub-Dashboard]] — Self-hosted Home Automation Dashboard using React and Node.js
 - [[AI-Comic-Generation-Workflow]] — AI-powered comic creation pipeline using image generation and workflow automation
+- [[NAN-Workflow-Photo-to-Notes-Transfer-System]] — Automated photo-based note capture and digital transfer system with OCR
