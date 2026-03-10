@@ -1,4 +1,4 @@
-2026-02-07 15:46
+2026-03-10 09:00
 
 Status:
 Tag: [[Software Engineering]] [[Daily Concept]] [[Testing & Practices]]
@@ -6,25 +6,27 @@ Tag: [[Software Engineering]] [[Daily Concept]] [[Testing & Practices]]
 # Property-Based Testing
 
 ## What is it?
-Property-based testing is a testing methodology where properties or characteristics of the software are defined, and then the test framework generates numerous random test cases to verify those properties. Instead of writing specific test inputs, you focus on the expected behavior of your code, ensuring it holds true for a wide range of scenarios.
+Property-based testing is a testing methodology where instead of writing specific input-output pairs to test your code, you define general properties that should hold true for a wide range of inputs. For example, if you have a function that sorts an array, a property might be that the output array is always sorted, regardless of the input array.
 
 ## Why does it matter?
-This approach is crucial in software engineering because it helps uncover edge cases and unexpected behavior that might not be considered in traditional example-based tests. By focusing on properties rather than specific inputs, developers can ensure their code is robust, maintainable, and less likely to fail when faced with unforeseen inputs in real-world scenarios.
+Property-based testing is important because it helps uncover edge cases and unexpected behaviors that traditional example-based testing might miss. It encourages developers to think about the contract of their functions and ensures that the code behaves correctly across many scenarios, ultimately leading to more robust and reliable software.
 
 ## Example
-Let's say you have a function that sorts a list of numbers. You want to ensure that the output list is always sorted, regardless of the input. Using a property-based testing library like `hypothesis` in Python, you could write:
+Here's a simple example in Python using the `hypothesis` library for property-based testing:
 
 ```python
 from hypothesis import given
 import hypothesis.strategies as st
 
-def sort_function(input_list):
-    return sorted(input_list)
+def sort_array(arr):
+    return sorted(arr)
 
 @given(st.lists(st.integers()))
-def test_sort(input_list):
-    sorted_list = sort_function(input_list)
-    assert sorted_list == sorted(sorted_list)
+def test_sorted_property(arr):
+    sorted_arr = sort_array(arr)
+    assert sorted_arr == sorted(sorted_arr)  # Output should be sorted
+
+# This test will run with many different lists of integers
 ```
 
-In this example, the `@given` decorator generates various random lists of integers to test if the sorting function always returns a sorted list.
+In this example, the `@given` decorator generates various lists of integers to check if the `sort_array` function consistently returns a sorted list.
