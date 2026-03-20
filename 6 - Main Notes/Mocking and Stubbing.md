@@ -1,4 +1,4 @@
-2026-02-26 01:03
+2026-03-20 09:00
 
 Status:
 Tag: [[Software Engineering]] [[Daily Concept]] [[Testing & Practices]]
@@ -6,32 +6,34 @@ Tag: [[Software Engineering]] [[Daily Concept]] [[Testing & Practices]]
 # Mocking and Stubbing
 
 ## What is it?
-Mocking and stubbing are techniques used in software testing to simulate the behavior of complex, real-world objects. Stubs provide predefined responses to specific calls made during a test, while mocks are more advanced and can verify interactions, such as how many times a method was called and with what parameters.
+Mocking and stubbing are techniques used in software testing to replace real objects with controlled replacements. A **stub** is a minimal implementation of an object that returns predetermined responses for specific calls, while a **mock** is a more complex object that can verify interactions, such as whether a method was called or not.
 
 ## Why does it matter?
-These techniques are crucial because they allow developers to isolate the unit of code being tested without relying on the actual implementation of dependencies, such as databases or APIs. This isolation makes tests faster, more reliable, and easier to write, ensuring that code behaves correctly in various scenarios without the overhead of real interactions.
+These techniques are crucial for isolating the unit of code being tested, which allows developers to focus on the function's logic without being affected by external systems like databases or APIs. By using mocks and stubs, developers can simulate various scenarios and edge cases, leading to more thorough testing and higher code quality.
 
 ## Example
-Here’s a simple example in Python using the `unittest` library with mocking:
+Here’s a simple example in Python using the `unittest` library:
 
 ```python
-import unittest
+from unittest import TestCase
 from unittest.mock import Mock
 
-def fetch_data(api):
-    return api.get_data()
+# Function to test
+def get_user_data(api):
+    return api.fetch_user()
 
-class TestFetchData(unittest.TestCase):
-    def test_fetch_data(self):
+class TestUserData(TestCase):
+    def test_get_user_data(self):
+        # Create a mock object for the API
         mock_api = Mock()
-        mock_api.get_data.return_value = {'key': 'value'}
+        mock_api.fetch_user.return_value = {'name': 'Alice'}
 
-        result = fetch_data(mock_api)
-        self.assertEqual(result, {'key': 'value'})
-        mock_api.get_data.assert_called_once()
+        # Call the function with the mock
+        result = get_user_data(mock_api)
 
-if __name__ == '__main__':
-    unittest.main()
+        # Verify the result and that the method was called
+        self.assertEqual(result, {'name': 'Alice'})
+        mock_api.fetch_user.assert_called_once()
 ```
 
-In this example, `mock_api` serves as a mock object that simulates an API without making actual network calls. The test verifies that `fetch_data` correctly interacts with this mock by calling `get_data`.
+In this example, we stub the `fetch_user` method to return a specific value, and we also use a mock to check if it was called exactly once during the test.
