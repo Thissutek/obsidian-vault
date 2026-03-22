@@ -13,6 +13,7 @@ Tag: [[Software Engineering]]
 - [[Feature Flags]] — Toggle features without deploying
 - [[Observability (Logs Metrics Traces)]] — Understand system behavior
 - [[Service Mesh]] — Infrastructure layer for service communication
+- [[CI-CD Pipeline Design]]
 
 ## Related
 - [[System Design]] — Infrastructure patterns that DevOps enables
