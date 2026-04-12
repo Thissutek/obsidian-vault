@@ -1,4 +1,4 @@
-2026-02-26 01:08
+2026-04-12 09:31
 
 Status:
 Tag: [[Software Engineering]] [[Daily Concept]] [[Concurrency]]
@@ -6,40 +6,43 @@ Tag: [[Software Engineering]] [[Daily Concept]] [[Concurrency]]
 # Deadlocks and Prevention
 
 ## What is it?
-A deadlock is a situation in computer systems where two or more processes cannot proceed because each is waiting for the other to release a resource. For example, if Process A holds Resource 1 and waits for Resource 2, while Process B holds Resource 2 and waits for Resource 1, they are stuck in a deadlock.
+A deadlock is a situation in programming where two or more processes are unable to proceed because each is waiting for the other to release resources. Imagine two people holding a piece of string, each pulling in opposite directions; neither can move without letting go of the string.
 
 ## Why does it matter?
-Deadlocks can severely impact application performance and user experience, as they halt processes and prevent the system from performing tasks efficiently. Understanding and preventing deadlocks is crucial in software engineering to ensure systems are robust and can handle multiple processes concurrently without getting stuck.
+Deadlocks are critical to understand in software engineering because they can lead to a complete halt in system operations, causing slowdowns or crashes. Preventing deadlocks ensures that your programs are more efficient and reliable, especially in multi-threaded applications where multiple processes may compete for shared resources.
 
 ## Example
-Consider a scenario with two threads trying to access two resources, A and B:
+Here's a simple example in Python that can lead to a deadlock situation:
 
 ```python
 import threading
 
+# Resources
+resource_a = threading.Lock()
+resource_b = threading.Lock()
+
 def thread1():
-    lock_A.acquire()
-    print("Thread 1 acquired lock A")
-    lock_B.acquire()  # May lead to deadlock if thread 2 holds lock B
-    print("Thread 1 acquired lock B")
-    lock_B.release()
-    lock_A.release()
+    with resource_a:
+        print("Thread 1 acquired Resource A")
+        with resource_b:
+            print("Thread 1 acquired Resource B")
 
 def thread2():
-    lock_B.acquire()
-    print("Thread 2 acquired lock B")
-    lock_A.acquire()  # May lead to deadlock if thread 1 holds lock A
-    print("Thread 2 acquired lock A")
-    lock_A.release()
-    lock_B.release()
+    with resource_b:
+        print("Thread 2 acquired Resource B")
+        with resource_a:
+            print("Thread 2 acquired Resource A")
 
-lock_A = threading.Lock()
-lock_B = threading.Lock()
-
+# Create threads
 t1 = threading.Thread(target=thread1)
 t2 = threading.Thread(target=thread2)
+
+# Start threads
 t1.start()
 t2.start()
+
+t1.join()
+t2.join()
 ```
 
-In this example, if both threads run simultaneously, they could end up waiting for each other indefinitely, causing a deadlock. To prevent this, you could enforce a strict order for acquiring locks.
+In this example, if `thread1` locks `resource_a` while `thread2` locks `resource_b`, both threads will wait indefinitely for the other to release their resources, resulting in a deadlock. To prevent this, you can impose a strict order on resource acquisition.
