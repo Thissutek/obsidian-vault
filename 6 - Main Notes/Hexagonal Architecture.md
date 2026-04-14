@@ -1,4 +1,4 @@
-2026-02-07 15:52
+2026-04-14 09:00
 
 Status:
 Tag: [[Software Engineering]] [[Daily Concept]] [[Architecture]]
@@ -6,43 +6,32 @@ Tag: [[Software Engineering]] [[Daily Concept]] [[Architecture]]
 # Hexagonal Architecture
 
 ## What is it?
-Hexagonal Architecture, also known as the Ports and Adapters pattern, is a software design approach that aims to separate the core logic of an application from external influences, such as databases, user interfaces, or third-party services. It organizes the system into a central core (the application’s business logic) surrounded by various "ports" (interfaces) and "adapters" (implementations) that enable communication with external systems.
+Hexagonal Architecture, also known as Ports and Adapters, is a software design pattern that emphasizes separating the core logic of an application from external concerns like databases, user interfaces, and third-party services. This structure creates "ports" (interfaces) through which the application communicates with "adapters" (implementations), allowing for flexibility and easier testing.
 
 ## Why does it matter?
-This architecture is important because it enhances the maintainability and testability of applications. By isolating the core logic from external dependencies, developers can change or replace these dependencies without affecting the core functionality. This leads to cleaner code, easier unit testing, and a more flexible system that can adapt to changes over time.
+Using Hexagonal Architecture enables developers to change or replace external components without affecting the core business logic of the application. This separation enhances maintainability, allows for easier unit testing, and supports the idea of evolving technology stacks over time without massive rewrites of the business logic.
 
 ## Example
-Here's a simple Python example demonstrating a hexagonal structure for a book management system:
+Imagine you are building an online store. The core logic is about processing orders and managing inventory. With Hexagonal Architecture, you might have an interface (port) for payment processing. You can create multiple adapters for different payment methods, like credit cards or PayPal. If you decide to switch from PayPal to Stripe, you only need to update the adapter without changing your core order processing code.
+
+Here’s a simple Python example:
 
 ```python
-# Core business logic
-class Book:
-    def __init__(self, title):
-        self.title = title
+class PaymentProcessor:
+    def process_payment(self, amount):
+        raise NotImplementedError
 
-    def get_title(self):
-        return self.title
+class PayPalAdapter(PaymentProcessor):
+    def process_payment(self, amount):
+        print(f"Processing ${amount} through PayPal.")
 
-# Port (interface)
-class BookRepository:
-    def save(self, book): pass
-    def find(self, title): pass
+class StripeAdapter(PaymentProcessor):
+    def process_payment(self, amount):
+        print(f"Processing ${amount} through Stripe.")
 
-# Adapter (implementation)
-class InMemoryBookRepository(BookRepository):
-    def __init__(self):
-        self.books = []
-        
-    def save(self, book):
-        self.books.append(book)
-        
-    def find(self, title):
-        return next((book for book in self.books if book.get_title() == title), None)
-
-# Using the adapter
-repo = InMemoryBookRepository()
-repo.save(Book("1984"))
-print(repo.find("1984").get_title())  # Outputs: 1984
+# Usage
+payment = PayPalAdapter()
+payment.process_payment(100)
 ```
 
-In this example, `Book` represents the core logic, while `BookRepository` serves as the port, and `InMemoryBookRepository` is the adapter that interacts with that logic.
+In this example, the `PaymentProcessor` is the port, while `PayPalAdapter` and `StripeAdapter` are two different ways to handle payments, demonstrating the flexibility of Hexagonal Architecture.
