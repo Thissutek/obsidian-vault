@@ -1,4 +1,4 @@
-2026-03-13 20:35
+2026-05-18 09:00
 
 Status:
 Tag: [[Software Engineering]] [[Daily Concept]] [[Design Patterns]]
@@ -6,42 +6,42 @@ Tag: [[Software Engineering]] [[Daily Concept]] [[Design Patterns]]
 # Builder Pattern
 
 ## What is it?
-The Builder Pattern is a design pattern used to create complex objects step by step. Instead of constructing an object directly with a constructor that takes many parameters, the Builder Pattern separates the construction of a complex object from its representation, allowing for more flexible and readable code.
+The Builder Pattern is a design pattern that helps create complex objects step by step. Instead of constructing an object in one go, this pattern allows you to specify different parts of an object incrementally, making it easier to manage and understand how the object is built. It’s particularly useful when an object requires many parameters or when you want to create variations of the same object type.
 
 ## Why does it matter?
-In software engineering, especially when dealing with objects that have numerous attributes or require a certain order of setup, the Builder Pattern simplifies the object creation process. It makes your code more maintainable and understandable, as it allows the developer to create objects in a clear and controlled manner, reducing the risk of errors arising from missing or incorrectly ordered parameters.
+In real software engineering, using the Builder Pattern can improve the readability and maintainability of your code. When dealing with complex objects, having a clear, step-by-step construction process makes it easier for other developers (or your future self) to understand how to create and modify those objects. This approach can help reduce errors, especially when there are optional parameters or when an object has default values.
 
 ## Example
-Here’s a quick example in Python that demonstrates the Builder Pattern:
+Here’s a simple example in Python that demonstrates the Builder Pattern for creating a `Pizza` object:
 
 ```python
-class House:
+class Pizza:
     def __init__(self):
-        self.rooms = 0
-        self.garden = False
+        self.toppings = []
 
-class HouseBuilder:
+    def add_topping(self, topping):
+        self.toppings.append(topping)
+
+class PizzaBuilder:
     def __init__(self):
-        self.house = House()
+        self.pizza = Pizza()
 
-    def add_rooms(self, num_rooms):
-        self.house.rooms = num_rooms
+    def add_pepperoni(self):
+        self.pizza.add_topping('pepperoni')
         return self
 
-    def add_garden(self):
-        self.house.garden = True
+    def add_mushrooms(self):
+        self.pizza.add_topping('mushrooms')
         return self
 
     def build(self):
-        return self.house
+        return self.pizza
 
-# Using the builder
-builder = HouseBuilder()
-my_house = (builder.add_rooms(3)
-                    .add_garden()
-                    .build())
+# Using the Builder
+builder = PizzaBuilder()
+my_pizza = builder.add_pepperoni().add_mushrooms().build()
 
-print(f"House has {my_house.rooms} rooms and garden: {my_house.garden}")
+print(my_pizza.toppings)  # Output: ['pepperoni', 'mushrooms']
 ```
 
-In this example, `HouseBuilder` helps create a `House` object step by step, making the code easier to read and manage.
+In this example, the `PizzaBuilder` class allows you to create a `Pizza` step by step, making it clear what toppings you are adding before finalizing the object.
