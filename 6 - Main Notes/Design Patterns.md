@@ -26,6 +26,7 @@ Tag: [[Software Engineering]]
 - [[Saga Pattern]] — Manage distributed transactions
 - [[Pub/Sub Pattern]] — Decouple message producers and consumers
 - [[Strangler Fig Pattern]] — Incrementally replace legacy systems
+- [[Pub-Sub Pattern]]
 
 ## Related
 - [[Architecture]] — Architectural patterns at a higher level
