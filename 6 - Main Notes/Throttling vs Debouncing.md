@@ -1,4 +1,4 @@
-2026-03-13 09:00
+2026-06-13 09:00
 
 Status:
 Tag: [[Software Engineering]] [[Daily Concept]] [[Concurrency]]
@@ -6,30 +6,44 @@ Tag: [[Software Engineering]] [[Daily Concept]] [[Concurrency]]
 # Throttling vs Debouncing
 
 ## What is it?
-Throttling and debouncing are techniques used to control how often a function gets executed, especially when it's triggered by events like scrolling or resizing the window. Throttling ensures a function runs at regular intervals, while debouncing postpones execution until a certain period of inactivity has passed.
+Throttling and debouncing are two techniques used to limit the number of times a function is executed in response to events like scrolling or resizing. Throttling ensures a function is executed at regular intervals—regardless of how often an event occurs—while debouncing delays the function execution until a specified time has passed since the last event.
 
 ## Why does it matter?
-These techniques are important for optimizing performance in web applications. Without them, a function could be called too many times in rapid succession, leading to slow performance or excessive resource usage. For instance, during a window resize event, running a function too frequently can cause significant lag; throttling or debouncing can smooth out the experience for users.
+These techniques are important for optimizing performance in web applications. For instance, when users resize a window or scroll a page, an excessive number of function calls can slow down the application. By using throttling and debouncing, you can enhance user experience and reduce unnecessary resource consumption, ensuring that your application runs smoothly and efficiently.
 
 ## Example
-Here’s a simple example in JavaScript to show how throttling can limit function calls:
+Here’s a simple example in JavaScript to illustrate the difference:
 
 ```javascript
+// Throttling example
 let lastExecution = 0;
-
-function throttle(func, limit) {
-  return function() {
-    const now = Date.now();
-    if (now - lastExecution >= limit) {
-      lastExecution = now;
-      func.apply(this, arguments);
-    }
-  };
+function throttle(callback, limit) {
+    return function() {
+        const now = new Date().getTime();
+        if (now - lastExecution >= limit) {
+            lastExecution = now;
+            callback();
+        }
+    };
 }
 
-window.addEventListener('resize', throttle(() => {
-  console.log('Window resized!');
-}, 200));
+// Debouncing example
+function debounce(callback, delay) {
+    let timer;
+    return function() {
+        clearTimeout(timer);
+        timer = setTimeout(callback, delay);
+    };
+}
+
+// Usage
+window.addEventListener('scroll', throttle(() => {
+    console.log('Throttled scroll event');
+}, 100));
+
+window.addEventListener('resize', debounce(() => {
+    console.log('Debounced resize event');
+}, 300));
 ```
 
-In this example, the `throttle` function ensures that the message "Window resized!" is logged at most every 200 milliseconds, even if the window is resized continuously.
+In this code, the `throttle` function limits how often the scroll event can trigger a callback, while the `debounce` function delays the execution of the resize event until after the user has stopped resizing for 300 milliseconds.
