@@ -1,4 +1,4 @@
-2026-03-10 09:00
+2026-06-15 09:00
 
 Status:
 Tag: [[Software Engineering]] [[Daily Concept]] [[Testing & Practices]]
@@ -6,27 +6,31 @@ Tag: [[Software Engineering]] [[Daily Concept]] [[Testing & Practices]]
 # Property-Based Testing
 
 ## What is it?
-Property-based testing is a testing methodology where instead of writing specific input-output pairs to test your code, you define general properties that should hold true for a wide range of inputs. For example, if you have a function that sorts an array, a property might be that the output array is always sorted, regardless of the input array.
+Property-Based Testing is a testing technique where you define general properties that your code should satisfy, rather than writing specific test cases. Instead of creating a fixed set of inputs and expected outputs, the testing framework generates a wide range of random inputs and checks if the properties hold. This helps uncover edge cases that you might not think to test manually.
 
 ## Why does it matter?
-Property-based testing is important because it helps uncover edge cases and unexpected behaviors that traditional example-based testing might miss. It encourages developers to think about the contract of their functions and ensures that the code behaves correctly across many scenarios, ultimately leading to more robust and reliable software.
+Property-Based Testing is important because it helps improve the robustness and reliability of your code. By focusing on the properties of functions, you can catch unexpected behaviors and bugs that traditional example-based tests might miss. It encourages thinking about the broader behavior of software and can lead to higher quality applications with less manual effort in crafting individual tests.
 
 ## Example
-Here's a simple example in Python using the `hypothesis` library for property-based testing:
+Here’s a simple example in Python using the `hypothesis` library for Property-Based Testing:
 
 ```python
 from hypothesis import given
 import hypothesis.strategies as st
 
-def sort_array(arr):
-    return sorted(arr)
+# A simple function to check if a number is even
+def is_even(num):
+    return num % 2 == 0
 
-@given(st.lists(st.integers()))
-def test_sorted_property(arr):
-    sorted_arr = sort_array(arr)
-    assert sorted_arr == sorted(sorted_arr)  # Output should be sorted
+@given(st.integers())
+def test_is_even(num):
+    # Property: An even number should return True
+    if num % 2 == 0:
+        assert is_even(num) is True
+    else:
+        assert is_even(num) is False
 
-# This test will run with many different lists of integers
+# This will automatically run the test with various integers
 ```
 
-In this example, the `@given` decorator generates various lists of integers to check if the `sort_array` function consistently returns a sorted list.
+In this example, the `test_is_even` function tests the property of the `is_even` function with many randomly generated integers, ensuring it behaves correctly across a wide range of inputs.
