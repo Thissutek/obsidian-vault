@@ -1,4 +1,4 @@
-2026-03-24 09:00
+2026-06-17 09:00
 
 Status:
 Tag: [[Software Engineering]] [[Daily Concept]] [[Programming Fundamentals]]
@@ -6,23 +6,26 @@ Tag: [[Software Engineering]] [[Daily Concept]] [[Programming Fundamentals]]
 # Stack vs Heap Memory
 
 ## What is it?
-Stack and heap are two types of memory used by programs during execution. The stack is a region of memory that stores local variables and function call information, following a Last In, First Out (LIFO) structure. The heap, on the other hand, is a larger pool of memory used for dynamic memory allocation, where variables can be created and destroyed as needed, allowing for flexible memory management.
+Stack and heap memory are two types of memory used for storing data in a program. The stack is a region of memory that stores temporary variables created by functions, using a last-in, first-out (LIFO) structure. The heap, on the other hand, is a larger pool of memory used for dynamic memory allocation, allowing you to request and free memory at runtime.
 
 ## Why does it matter?
-Understanding the difference between stack and heap memory is crucial for efficient memory management and performance optimization in software engineering. Stack memory is faster and more efficient for temporary data, while heap memory allows for more complex data structures that need to persist beyond a single function call. Mismanaging memory allocation can lead to issues like memory leaks or stack overflow errors, which can severely affect application performance.
+Understanding the difference between stack and heap memory is crucial for efficient memory management in software engineering. The stack is faster to access because of its structure, while the heap allows for more flexible data storage but requires careful management to avoid memory leaks. Knowing when to use each can lead to better performance and resource management in your applications.
 
 ## Example
-Here's a simple example in Python to illustrate the difference:
+Here's a simple Python example illustrating the difference:
 
 ```python
-def my_function():
-    local_var = 10  # This is stored in the stack
-    return local_var
+def stack_example():
+    x = 10  # Stored in stack
+    print(x)
 
-dynamic_list = [1, 2, 3]  # This is stored in the heap
+def heap_example():
+    y = [1, 2, 3]  # List stored in heap
+    return y
 
-print(my_function())  # Local variable 'local_var' is gone after function execution
-print(dynamic_list)   # 'dynamic_list' remains accessible
+stack_example()  # Output: 10
+heap_variable = heap_example()  # y is allocated in the heap
+print(heap_variable)  # Output: [1, 2, 3]
 ```
 
-In this example, `local_var` is stored in the stack and is cleared once the function exits, while `dynamic_list` is stored in the heap and remains accessible for as long as there are references to it.
+In this example, the variable `x` is stored in stack memory and is automatically cleaned up when the function exits, while the list `y` is stored in heap memory and needs to be managed more carefully throughout its lifecycle.
