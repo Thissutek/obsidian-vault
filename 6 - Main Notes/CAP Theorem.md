@@ -1,4 +1,4 @@
-2026-03-30 09:00
+2026-06-19 09:00
 
 Status:
 Tag: [[Software Engineering]] [[Daily Concept]] [[System Design]]
@@ -6,32 +6,10 @@ Tag: [[Software Engineering]] [[Daily Concept]] [[System Design]]
 # CAP Theorem
 
 ## What is it?
-The CAP Theorem, also known as Brewer's Theorem, states that in a distributed data system, you can only achieve two out of the following three guarantees: Consistency, Availability, and Partition Tolerance. Consistency means every read returns the latest write, Availability ensures that every request receives a response (even if it's not the most recent data), and Partition Tolerance allows the system to continue operating despite network failures that split the system into segments.
+The CAP Theorem, also known as Brewer's theorem, states that in a distributed data store, you can only guarantee two out of the following three properties at the same time: Consistency, Availability, and Partition Tolerance. Consistency means that all nodes see the same data at the same time. Availability ensures that every request receives a response, whether successful or failed. Partition Tolerance means the system continues to operate despite network failures.
 
 ## Why does it matter?
-Understanding the CAP Theorem is crucial for engineers designing distributed systems, like databases or cloud applications. It helps you make informed trade-offs between how data is handled and accessed during network issues, ensuring that you build systems that meet your users' expectations based on the specific needs of your application.
+Understanding the CAP Theorem is crucial for software engineers designing distributed systems, such as cloud applications. It helps them make informed decisions about trade-offs when designing systems that need to handle large amounts of data and user requests. For instance, prioritizing consistency might lead to downtime during network issues, while focusing on availability might risk serving outdated data.
 
 ## Example
-Imagine a bank's online system as a distributed database. If you prioritize **Consistency** and **Partition Tolerance** during a network split, users may be unable to access their account information (low availability). However, if you choose **Availability** and **Partition Tolerance**, users might see outdated balances, which can be problematic. Here's a simple illustration in Python:
-
-```python
-class BankAccount:
-    def __init__(self):
-        self.balance = 1000
-
-    def withdraw(self, amount):
-        if amount <= self.balance:
-            self.balance -= amount
-            return True
-        return False
-
-# Simulating network partition
-account1 = BankAccount()
-account2 = BankAccount()
-
-# Account withdrawal in separate parts of a network
-account1.withdraw(200)  # Consistent update?
-print(account2.balance)  # Might not reflect the updated balance!
-```
-
-In this example, if `account2` operates without being aware of changes in `account1`, it reflects the challenges of consistency during a network split.
+Consider a simple online banking system where users retrieve their account balances. If two users try to check their balance simultaneously, and one user makes a withdrawal, the system must decide whether to allow both users to see the same balance (consistency) or to ensure that both can access the service even if it means they might see outdated balances (availability). If there’s a network split, the system could either refuse access to one user to maintain consistency or allow both users to access it for availability, but it can’t ensure both at the same time.
