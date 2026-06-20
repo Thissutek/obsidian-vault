@@ -1,4 +1,4 @@
-2026-04-09 09:00
+2026-06-20 09:00
 
 Status:
 Tag: [[Software Engineering]] [[Daily Concept]] [[Software Principles]]
@@ -6,13 +6,13 @@ Tag: [[Software Engineering]] [[Daily Concept]] [[Software Principles]]
 # Law of Demeter
 
 ## What is it?
-The Law of Demeter, often referred to as the "principle of least knowledge," is a design guideline for developing software, particularly in object-oriented programming. It suggests that a module or object should only interact with its immediate neighbors, not with the internal details of other modules or objects. This means an object should only call methods of itself, its direct properties, or objects created within its own methods.
+The Law of Demeter, also known as the Principle of Least Knowledge, is a design guideline for developing software, particularly in object-oriented programming. It suggests that an object should only communicate with its immediate friends and not with strangers, meaning it should only call methods on objects that it directly interacts with, avoiding interactions with objects that are several layers away. This helps in reducing dependencies between components.
 
 ## Why does it matter?
-The Law of Demeter promotes loose coupling between components, making your code easier to maintain and less prone to errors. By reducing dependencies, changes to one part of the codebase are less likely to ripple through and break others, which significantly enhances code modularity and readability—key aspects of good software engineering practices.
+The Law of Demeter promotes loose coupling, making your code more modular and easier to maintain. When objects are less dependent on one another, changes can be made to one part of the system without impacting others, which is crucial in software engineering for scalability and reducing bugs. By adhering to this principle, developers can create cleaner, more understandable codebases that are simpler to test and refactor.
 
 ## Example
-Here's a simple example in Python:
+Here's a simple Python example demonstrating the Law of Demeter:
 
 ```python
 class Engine:
@@ -23,12 +23,16 @@ class Car:
     def __init__(self):
         self.engine = Engine()
 
-    def start_car(self):
-        return self.engine.start()
+    def start(self):
+        return self.engine.start()  # Directly calls the engine's start method
 
-# Usage
+class Driver:
+    def drive(self, car):
+        return car.start()  # Calls the car's start method, not the engine's directly
+
+driver = Driver()
 my_car = Car()
-print(my_car.start_car())  # Output: Engine started
+print(driver.drive(my_car))  # Output: Engine started
 ```
 
-In this example, the `Car` class interacts directly with its `Engine` object to start the car. It doesn't reach into an `Engine` object to access nested components or methods, adhering to the Law of Demeter.
+In this example, the `Driver` interacts only with the `Car` object and not directly with the `Engine`, adhering to the Law of Demeter.
