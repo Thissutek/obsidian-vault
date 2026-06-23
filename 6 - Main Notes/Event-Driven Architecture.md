@@ -1,4 +1,4 @@
-2026-06-05 09:00
+2026-06-23 09:00
 
 Status:
 Tag: [[Software Engineering]] [[Daily Concept]] [[Architecture]]
@@ -6,38 +6,29 @@ Tag: [[Software Engineering]] [[Daily Concept]] [[Architecture]]
 # Event-Driven Architecture
 
 ## What is it?
-Event-Driven Architecture (EDA) is a software design pattern that revolves around the production, detection, consumption, and reaction to events. An event is any significant change in state or an occurrence that can trigger a response, allowing different components of a system to communicate and respond independently.
+Event-Driven Architecture (EDA) is a software design pattern that focuses on the production, detection, consumption, and reaction to events. An event is a significant change in state or an action that occurs, like a user clicking a button or data being updated. In this architecture, components communicate through events rather than direct calls, allowing for a more decoupled and scalable system.
 
 ## Why does it matter?
-EDA is important because it promotes a decoupled and scalable system design. This means that components can evolve independently, making it easier to add features and improve performance without affecting the entire system. In real-world applications, such as online shopping platforms, EDA allows for real-time updates and a responsive user experience, enhancing customer satisfaction.
+Event-Driven Architecture is important because it enhances system responsiveness and scalability. By allowing components to work independently and react to events as they happen, applications can handle high volumes of transactions and user interactions efficiently. This is particularly valuable in distributed systems where different services need to respond to changes without tightly coupling their functionalities.
 
 ## Example
-Here's a simple example in Python that demonstrates an event-driven approach using a basic event system:
+Here’s a simple example in Python using a basic event system:
 
 ```python
 class Event:
-    def __init__(self, name):
-        self.name = name
+    def __init__(self, message):
+        self.message = message
 
-class EventHandler:
-    def handle(self, event):
-        print(f"Handling event: {event.name}")
+class EventListener:
+    def handle_event(self, event):
+        print(f"Event received: {event.message}")
 
-class EventEmitter:
-    def __init__(self):
-        self.handlers = []
+def main():
+    listener = EventListener()
+    event = Event("User signed up")
+    listener.handle_event(event)
 
-    def subscribe(self, handler):
-        self.handlers.append(handler)
-
-    def emit(self, event):
-        for handler in self.handlers:
-            handler.handle(event)
-
-# Usage
-event_emitter = EventEmitter()
-event_emitter.subscribe(EventHandler())
-event_emitter.emit(Event("User Signed Up"))
+main()
 ```
 
-In this example, when a "User Signed Up" event occurs, the system notifies the EventHandler, demonstrating how components can react to events without being tightly integrated.
+In this example, we create an `Event` representing a user sign-up and an `EventListener` that reacts to the event by printing a message. This simple pattern can be expanded to more complex systems, where multiple listeners react to various events in real-time.
