@@ -1,4 +1,4 @@
-2026-04-13 09:00
+2026-06-28 09:00
 
 Status:
 Tag: [[Software Engineering]] [[Daily Concept]] [[Software Principles]]
@@ -6,29 +6,26 @@ Tag: [[Software Engineering]] [[Daily Concept]] [[Software Principles]]
 # SOLID Principles
 
 ## What is it?
-The SOLID principles are a set of five design guidelines in object-oriented programming that help developers create maintainable and scalable software. The acronym stands for Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, and Dependency Inversion. Each principle addresses a specific aspect of software design to improve code quality and reduce complexity.
+SOLID is an acronym representing five design principles in object-oriented programming that aim to make software designs more understandable, flexible, and maintainable. The five principles are: Single Responsibility, Open-Closed, Liskov Substitution, Interface Segregation, and Dependency Inversion. Together, they help developers create systems that can adapt to change without breaking existing functionality.
 
 ## Why does it matter?
-Understanding and applying the SOLID principles is crucial for writing flexible and robust code. They help prevent common pitfalls such as code duplication, tight coupling, and difficulties in testing. By adhering to these principles, software engineers can create systems that are easier to modify and extend over time, ultimately saving time and reducing bugs.
+Understanding and applying the SOLID principles is crucial in software engineering because they improve code quality and reduce the cost of future changes. By adhering to these principles, developers can create modular systems that are easier to test, debug, and extend, ultimately leading to more robust applications and better collaboration among team members.
 
 ## Example
-Imagine you're designing a simple notification system. Instead of a single class that handles all types of notifications (email, SMS, push notifications), you can use SOLID principles to create separate classes.
+Here's a simple example demonstrating the Single Responsibility Principle in Python:
 
 ```python
-class EmailNotification:
-    def send(self, message):
-        print(f"Sending Email: {message}")
+class Report:
+    def generate(self):
+        return "Report content"
 
-class SMSNotification:
-    def send(self, message):
-        print(f"Sending SMS: {message}")
+class ReportPrinter:
+    def print_report(self, report):
+        print(report.generate())
 
-def notify(notification, message):
-    notification.send(message)
-
-# Usage
-notify(EmailNotification(), "Hello via Email!")
-notify(SMSNotification(), "Hello via SMS!")
+report = Report()
+printer = ReportPrinter()
+printer.print_report(report)
 ```
 
-In this example, each notification type has its own class (Single Responsibility), making it easy to add more types without altering existing code (Open/Closed).
+In this example, the `Report` class is responsible for generating the report content, while the `ReportPrinter` class handles the printing. This separation of responsibilities makes each class easier to understand and modify independently.
