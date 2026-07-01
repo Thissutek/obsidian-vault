@@ -1,4 +1,4 @@
-2026-02-22 09:00
+2026-07-01 09:00
 
 Status:
 Tag: [[Software Engineering]] [[Daily Concept]] [[Design Patterns]]
@@ -6,40 +6,40 @@ Tag: [[Software Engineering]] [[Daily Concept]] [[Design Patterns]]
 # Command Pattern
 
 ## What is it?
-The Command Pattern is a behavioral design pattern that turns a request into a stand-alone object. This means that instead of calling a method directly, you create an object that encapsulates all the information needed to perform that action, including method name, parameters, and the object that owns the method. This allows for greater flexibility in your code, such as queueing requests or logging actions.
+The Command Pattern is a behavioral design pattern that encapsulates a request as an object, thereby allowing for parameterization of clients with queues, requests, and operations. This pattern separates the object that invokes the operation from the one that knows how to perform it. Essentially, it turns actions (commands) into first-class objects.
 
 ## Why does it matter?
-In real software engineering, the Command Pattern helps in decoupling the sender of a request from the object that executes it. This separation of concerns makes your code more modular and easier to maintain. It also enables features like undo functionality, where you can store commands and later reverse them if needed.
+This pattern is important in software engineering because it promotes decoupling, making your code more flexible and easier to manage. By using the Command Pattern, you can support undoable operations, queue requests, or log changes, which are often required in user interfaces and transactional systems. It also makes it easier to add new commands without modifying existing code.
 
 ## Example
-Here’s a simple example in Python:
+Here’s a simple example in Python showcasing the Command Pattern:
 
 ```python
+class Command:
+    def execute(self):
+        pass
+
+class LightOnCommand(Command):
+    def __init__(self, light):
+        self.light = light
+        
+    def execute(self):
+        self.light.turn_on()
+
 class Light:
     def turn_on(self):
-        print("The light is on")
+        print("The light is on!")
 
-    def turn_off(self):
-        print("The light is off")
+class RemoteControl:
+    def submit(self, command):
+        command.execute()
 
-class Command:
-    def __init__(self, light, action):
-        self.light = light
-        self.action = action
-
-    def execute(self):
-        if self.action == "on":
-            self.light.turn_on()
-        elif self.action == "off":
-            self.light.turn_off()
-
-# Usage
 light = Light()
-command_on = Command(light, "on")
-command_off = Command(light, "off")
+light_on = LightOnCommand(light)
+remote = RemoteControl()
 
-command_on.execute()  # Output: The light is on
-command_off.execute()  # Output: The light is off
+# Use the remote to turn on the light
+remote.submit(light_on)
 ```
 
-In this example, the `Command` class encapsulates the action to be performed (`turn_on` or `turn_off`) on the `Light` object, showcasing the flexibility of the Command Pattern.
+In this example, `LightOnCommand` encapsulates the command to turn on a light, while `RemoteControl` is the invoker that executes this command. This makes it easy to extend functionality by adding new commands later!
